@@ -38,7 +38,7 @@ export function Header() {
         <nav className="flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center gap-12">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-4">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/icon-512.png"
                 alt="NCMS Logo"
@@ -49,25 +49,22 @@ export function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-2">
               {navItems.map((item) => (
-                <Link
+                <Button
                   key={item.href}
-                  href={item.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
+                  variant="ghost"
+                  className="text-white/80 hover:text-white transition-colors text-sm font-medium"
                 >
                   {item.label}
-                </Link>
+                </Button>
               ))}
             </div>
           </div>
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Button
-              variant="ghost"
-              className="text-muted-foreground hover:text-foreground"
-            >
+            <Button variant="ghost" className="text-white/80 hover:text-white">
               Login
             </Button>
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
