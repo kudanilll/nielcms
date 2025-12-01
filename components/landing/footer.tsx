@@ -115,7 +115,8 @@ export function Footer() {
         {/* Bottom */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2025 NCMS (NielCMS). All rights reserved.
+            © {new Date().getFullYear()} Achmad Daniel Syahputra. All rights
+            reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link
