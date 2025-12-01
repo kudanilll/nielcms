@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { motion } from "framer-motion";
-import Background from "@/components/layout/background";
+import Background from "@/components/landing/background";
 import Image from "next/image";
 import Link from "next/link";
 
