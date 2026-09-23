@@ -64,7 +64,13 @@ export function Header() {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" className="text-white/80 hover:text-white">
+            <Button
+              variant="ghost"
+              onClick={() =>
+                (window.location.href = "/admin/authentication/login")
+              }
+              className="text-white/80 hover:text-white"
+            >
               Login
             </Button>
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
